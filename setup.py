@@ -27,7 +27,11 @@ else:
         raise ValueError(f"CPU version of spconv is only available in LINUX. Please install CUDA toolkit >= 11.3")
 
 setup(
+    name='spconv-wrapper',
+    version='0.0',
+    description='installs appropriate spconv',
     install_requires=[
         spconv_version
     ],
+    author='Edward Cho'
 )
